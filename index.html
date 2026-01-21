@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Data Kelulusan</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:#1abc9c;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.card{
+    width:420px;
+    background:rgba(0,0,0,0.25);
+    padding:20px;
+    border-radius:18px;
+    color:white;
+}
+h2{
+    text-align:center;
+    margin-bottom:15px;
+}
+label{
+    font-weight:bold;
+}
+input{
+    width:100%;
+    padding:8px;
+    margin:6px 0 12px;
+    border:none;
+    border-radius:6px;
+}
+button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:20px;
+    background:#3498db;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+<h2>DATA KELULUSAN</h2>
+
+<form action="hasil.php" method="POST">
+    <label>NAMA</label>
+    <input type="text" name="nama" required>
+
+    <label>NISN</label>
+    <input type="text" name="nisn" required>
+
+    <label>BAHASA INDONESIA</label>
+    <input type="number" name="bindo" required>
+
+    <label>BAHASA INGGRIS</label>
+    <input type="number" name="bing" required>
+
+    <label>MATEMATIKA</label>
+    <input type="number" name="math" required>
+
+    <label>IPAS</label>
+    <input type="number" name="ipas" required>
+
+    <label>DASAR KOMPUTER</label>
+    <input type="number" name="dk" required>
+
+    <button type="submit">Proses</button>
+</form>
+</div>
+
+</body>
+</html>
